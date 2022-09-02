@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,
+    minimum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="../移动web开发/bootstrap框架用法/bootstrap-3.4.1-dist/css/bootstrap.min.css">
+    <!-- 导入全局样式 -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <script src="../jquery库/jquery.min.js"></script>
+    <script src="js/time.js"></script>
+    <!-- 网页标题图标 -->
+    <link rel="icon" href="./images/鹰，卡通动物.svg" type="images/x-icon">
+
+    <title>哥恩苏的页面</title>
+</head>
+
+<body>
+    <audio src="music/dingdingyy.mp3" preload="auto" loop="loop" id="music"></audio>
+    <div class="top">
+        <div class="big-box">
+            <img src="https://pic2.zhimg.com/v2-f367acfab1673abab1d6b78439179464_r.jpg?source=1940ef5c" alt="">
+            <div class="h-1">前端开发</div>
+            <div class="h-2">有志青年</div>
+            <div class="h-3">知识海洋</div>
+            <div class="a1"></div>
+            <div class="a2"></div>
+            <div class="a3"></div>
+            <div class="a4"></div>
+        </div>
+        <ul class="list">
+            <li><a href="##">HOME</a></li>
+            <li><a href="#gyw">About Me</a></li>
+            <li><a href="#hobby">My hobby</a></li>
+            <li class="logo"><img src="./images/music.svg" id="img" title=""></li>
+            <li><a href="#jsz">Technology Stack</a></li>
+            <li><a href="#wdfx">Share</a></li>
+            <li><a href="#lyq">Message</a></li>
+        </ul>
+
+    </div>
+
+    <header class="first" id="two">
+        <div class="box">
+            <!-- 计时器 -->
+            <div class="time">
+                <p>时钟</p>
+                <p class="time-text">坚持美好，珍惜时间</p>
+                <span id="demo"> </span>
+                <p class="p-text">青春关于时间的故事:<br />青春流逝得如此之快，就算追也追不到。
+                    有的时候，从早晨起床到夜晚睡觉，
+                    你会觉得时间流的好快，到底是谁偷走了我们的青春，
+                    还是我们自己赶跑了？谁也不会知道。
+                    一个来无影去无踪的隐形人会被你那么容易就看见吗？</p>
+            </div>
+            <!-- banner轮播图区域 -->
+            <div class="swiper">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/001.webp" alt=""></div>
+                        <div class="swiper-slide"><img src="images/002.webp" alt=""></div>
+                        <div class="swiper-slide"><img src="images/003.webp" alt=""></div>
+                        <div class="swiper-slide"><img src="images/004.webp" alt=""></div>
+                        <div class="swiper-slide"><img src="images/005.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/006.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/gyw-1.png" alt=""></div>
+                        <div class="swiper-slide"><img src="images/008.jpeg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/009.png" alt=""></div>
+                        <div class="swiper-slide"><img src="images/010.png" alt=""></div>
+                        <div class="swiper-slide"><img src="images/012.png" alt=""></div>
+                        <div class="swiper-slide"><img src="images/013.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/014.png" alt=""></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <!-- Swiper JS -->
+                <script src="js/swiper-bundle.min.js"></script>
+
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper(".mySwiper", {
+                        spaceBetween: 30,
+                        centeredSlides: true,
+                        autoplay: {
+                            delay: 2500,
+                            disableOnInteraction: false,
+                        },
+                        pagination: {
+                            el: ".swiper-pagination",
+                            clickable: true,
+                        },
+                        navigation: {
+                            nextEl: ".swiper-button-next",
+                            prevEl: ".swiper-button-prev",
+                        },
+                    });
+                </script>
+            </div>
+
+            <!-- 盒子右边start -->
+            <div class="box-right">
+                <div class="box-right-logo">
+                    <img src="https://pic2.zhimg.com/v2-f367acfab1673abab1d6b78439179464_r.jpg?source=1940ef5c" alt="">
+                </div>
+                <h3>哥恩苏</h3>
+                <p>签名：哥恩苏爱喝哇哈哈tap</p>
+                <p>越努力越幸运，让好奇充满我的世界</p>
+                <hr>
+                <h2>个人标签</h2>
+                <ul class="lb">
+
+                    <li>热爱动漫</li>
+                    <li>永远的好奇</li>
+                    <li>想象力创造</li>
+                    <li>选择的背后</li>
+                    <li>一步一步</li>
+                    <li>家里蹲患者</li>
+                    <li>六六六六六</li>
+                    <li>喜欢物理，科幻</li>
+                    <li>人类宇宙第一步</li>
+                </ul>
+            </div>
+        </div>
+
+
+    </header>
+    <!-- 首页end -->
+
+        <!-- 关于我start -->
+        <div id="gyw">
+
+            <div class="content">
+                <h1>Hi!陌生人你好！</h1>
+                <h2>这里哥恩苏</h2>
+                <h3>所谓有朋自远方来，不亦乐乎</h3>
+                <h4>进来的你请一定要耐心收看完这段文字哦！(๑′ᴗ‵๑)Ｉ Lᵒᵛᵉᵧₒᵤ❤</h4>
+                <h5>容我自我介绍一番，我，00后，一个热爱技术的在校大学生</h5>
+                <h6>在学习前端的过程中遇到过很多的问题</h6>
+                <p>但坚持是对自己说过最多的话</p>
+                <p>热衷于动漫小说的中二青年</p>
+                <p>如果消灭bug是一个痛苦的过程，那么学习一定是一个享受的过程</p>
+                <p>要学会享受这个学习的过程</p>
+                <p>幸运的是，自己还好是个乐天派，拥有积极的心态，心态对一个人作用真的是!important</p>
+                <p>希望各位还在坚持的朋友也能保持乐观下去，积极面对明天</p>
+                <p>祝还在拼搏的各位，不仅能消灭代码中的bug，还能轻易消灭生活的bug，愉悦每一天</p>
+                <p>话就说到这了，各位大佬继续往下看吧</p>
+                <p>(＊＾▽＾＊)o♪</p>
+            </div>
+            <div class="gyw-footer">
+                <ul class="gyw-img">
+                    <li><img src="./images/gyw-1.png" alt=""></li>
+                    <li><img src="./images/gyw-2.jpg" alt=""></li>
+                    <li><img src="./images/gyw-4.jpeg" alt=""></li>
+                    <li><img src="./images/gyw-5.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 关于我end -->
+
+         <!-- 技术栈start -->
+    <div id="jsz">
+
+        <ol class="card-list">
+            <li>
+                <img src="images/jsz-1.jpg" alt="">
+                <div class="up-1">
+                    <h1>HTML</h1>
+                </div>
+            </li>
+            <li><img src="images/jsz-2.jpeg" alt="">
+                <div class="up-1">
+                    <h1>CSS</h1>
+                </div>
+            </li>
+            <li><img src="images/jsz-3.jpeg" alt="">
+                <div class="up-1">
+                    <h1>JavaScript</h1>
+                </div>
+            </li>
+            <li><img src="images/jsz-4.jpg" alt="">
+                <div class="up-1">
+                    <h1>框架</h1>
+                </div>
+            </li>
+            </0l>
+            <div class="lxt"> <a href="https://objtube.gitee.io/front-end-roadmap/#/">
+                    <h1 title="点击查看前端学习路线">»»前端学习路线图</h1>
+                </a></div>
+
+    </div>
+</body>
+
+</html>
